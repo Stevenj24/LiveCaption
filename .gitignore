@@ -1,0 +1,7 @@
+pycache/
+*.py[cod]
+.env
+venv/
+.vscode/
+.idea/
+plans/
