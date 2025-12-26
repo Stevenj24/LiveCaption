@@ -1,14 +1,14 @@
-# 🎙️ EchoSub - 实时双语字幕翻译器
+# 🎙️ LiveCaption - 实时双语字幕翻译器
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue.svg" alt="Python">
-  <img src="https://img.shields.io/badge/Platform-Windows-lightgrey.svg" alt="Platform">
-  <img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="License">
+  <img src="https://img.shields.io/badge/Python-3.10+-007EC6.svg?logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/Platform-Windows-555555.svg?logo=windows&logoColor=white" alt="Platform">
+  <img src="https://img.shields.io/badge/License-GPL%20v3-2ea44f.svg" alt="License">
 </p>
 
-**EchoSub** 是一款 Windows 桌面应用程序，实时捕获系统音频（如视频、会议、直播），使用 Whisper 进行语音识别，并通过 GPT 翻译成中文，以悬浮字幕窗口同步显示双语内容。
+**LiveCaption** 是一款 Windows 桌面应用程序，实时捕获系统音频（如视频、会议、直播），使用 Whisper 进行语音识别，并通过 GPT 翻译成中文，以悬浮字幕窗口同步显示双语内容。
 
-![Demo](https://via.placeholder.com/800x200/1a1a2e/ffffff?text=EchoSub+Demo)
+![Demo](https://github.com/user-attachments/assets/e323133a-b333-496b-aac9-177443ab596c)
 
 ## ✨ 功能特点
 
@@ -31,12 +31,12 @@
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/yourusername/echosub.git
-cd echosub
+git clone https://github.com/wzyu26/livecaption.git
+cd livecaption
 
 # 2. 创建虚拟环境 (推荐使用 conda)
-conda create -n echosub python=3.10
-conda activate echosub
+conda create -n livecaption python=3.10
+conda activate livecaption
 
 # 3. 安装依赖
 pip install -r requirements.txt
@@ -74,20 +74,18 @@ python main.py
 ## 📁 项目结构
 
 ```
-echosub/
+livecaption/
 ├── main.py                 # 程序入口
 ├── config.py               # 配置管理
 ├── requirements.txt        # 依赖清单
 ├── .env.example            # 环境变量模板
 │
-├── modules/
-│   ├── audio.py            # 🔊 音频捕获 (WASAPI Loopback)
-│   ├── asr.py              # 🎯 语音识别 (faster-whisper)
-│   ├── llm.py              # 🌏 翻译服务 (OpenAI API)
-│   └── ui.py               # 🖥️ 悬浮字幕窗口 (PyQt6)
-│
-└── plans/
-    └── architecture.md     # 技术架构文档
+└── modules/
+    ├── audio.py            # 🔊 音频捕获 (WASAPI Loopback)
+    ├── asr.py              # 🎯 语音识别 (faster-whisper)
+    ├── llm.py              # 🌏 翻译服务 (OpenAI API)
+    └── ui.py               # 🖥️ 悬浮字幕窗口 (PyQt6)
+
 ```
 
 ## ⚙️ 配置参数
@@ -167,22 +165,9 @@ flowchart TB
 | GPU 显存占用 | ~2GB (whisper-small) |
 | CPU 占用 | ~10-15% |
 
-## 📝 更新日志
-
-### v0.2.0 (2024-12-25)
-- ✨ 智能分句：基于静音检测，避免句子过早切断
-- ✨ 文本缓冲：短片段自动合并
-- ✨ UI 优化：超长文本截断显示
-- 🐛 修复：通道数不匹配导致的设备打开失败
-- 🐛 修复：流式响应空 chunk 处理
-
-### v0.1.0 (2024-12-24)
-- 🎉 首个版本发布
-- ✨ 基础功能：音频捕获、语音识别、翻译、字幕显示
-
 ## 📄 许可证
 
-MIT License - 详见 [LICENSE](LICENSE)
+GPL v3 License - 详见 [LICENSE](LICENSE)
 
 ## 🙏 致谢
 
