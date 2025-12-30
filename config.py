@@ -12,6 +12,7 @@ class Config:
     OPENAI_BASE_URL = os.getenv("OPENAI_BASE_URL", "https://api.openai.com/v1")
 
     # 模型选择
+    # GPT_MODEL = "qwen3:4b"
     GPT_MODEL = "gpt-4o-mini"
 
     # 提示词

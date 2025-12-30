@@ -45,6 +45,8 @@ class ASRWorker(QThread):
         SILENCE_THRESHOLD = 0.01
         SILENCE_DURATION_FOR_SPLIT = Config.MIN_SILENCE_DURATION_MS / 1000.0
 
+        debug_counter = 0
+        
         while self.running:
             try:
                 chunk = self.audio_queue.get(timeout=0.5)
@@ -53,6 +55,12 @@ class ASRWorker(QThread):
                 # 检测当前 chunk 是否为静音
                 chunk_rms = np.sqrt(np.mean(chunk ** 2))
                 is_silence = chunk_rms < SILENCE_THRESHOLD
+                
+                # 调试日志：每10次处理打印一次状态
+                debug_counter += 1
+                if debug_counter % 10 == 0:
+                    buffer_sec = len(audio_buffer) / Config.SAMPLE_RATE
+                    print(f"[ASR] 📊 DEBUG: chunk_rms={chunk_rms:.6f}, 静音={is_silence}, 缓冲={buffer_sec:.1f}s, 阈值={SILENCE_THRESHOLD}")
                 
                 current_time = time.time()
                 buffer_duration = len(audio_buffer) / Config.SAMPLE_RATE
